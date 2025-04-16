@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         try (var funcMode = new Scanner(System.in)) {
-            var formatDoubleWithInteger = new DecimalFormat("#");
+            var formatDoubleWithInteger = new DecimalFormat("");
 
             System.out.println("Digite o valor de A: ");
             double a = funcMode.nextInt();
@@ -19,12 +19,6 @@ public class Main {
 
             System.out.println(formatDoubleWithInteger.format(valueA));
             System.out.println(formatDoubleWithInteger.format(valueB));
-        }
-    }
-
-    public class CalculadoraModular {
-        public static double calcularModulo(double valor) {
-            return Math.abs(valor);
         }
     }
 }

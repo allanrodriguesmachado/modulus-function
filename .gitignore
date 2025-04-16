@@ -6,7 +6,7 @@
 # IntelliJ IDEA
 .idea/
 *.iml
-
+.vscode/
 # Eclipse
 .classpath
 .project

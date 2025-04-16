@@ -6,7 +6,7 @@
 
     <groupId>br.com.func_modular</groupId>
     <artifactId>func_modular</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -20,7 +20,7 @@
             <version>5.13.0-M2</version>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
