@@ -1,0 +1,30 @@
+# Diretórios de build
+/target/
+/bin/
+/out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Arquivos do Maven
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.tar
+*.zip
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
