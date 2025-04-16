@@ -4,15 +4,19 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try (var funcMode = new Scanner(System.in)) {
             var formatDoubleWithInteger = new DecimalFormat("");
 
-            System.out.println("Digite o valor de A: ");
+            title("A");
             double a = funcMode.nextInt();
 
-            System.out.println("Digite o valor de B: ");
+            title("B");
             double b = funcMode.nextInt();
+
+            if (a == (int) a) {
+                throw new Exception("Os valores digitados são inteiros.");
+            }
 
             double valueA = calcularModulo(a);
             double valueB = calcularModulo(b);
@@ -24,5 +28,9 @@ public class Main {
 
     private static double calcularModulo(double valor) {
         return Math.abs(valor);
+    }
+
+    private static void title(String title) {
+        System.out.println("Digite o valor de " + title + ": ");
     }
 }
