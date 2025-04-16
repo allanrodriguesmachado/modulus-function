@@ -14,11 +14,15 @@ public class Main {
             System.out.println("Digite o valor de B: ");
             double b = funcMode.nextInt();
 
-            double valueA = Math.abs(a);
-            double valueB = Math.abs(b);
+            double valueA = calcularModulo(a);
+            double valueB = calcularModulo(b);
 
             System.out.println(formatDoubleWithInteger.format(valueA));
             System.out.println(formatDoubleWithInteger.format(valueB));
         }
+    }
+
+    private static double calcularModulo(double valor) {
+        return Math.abs(valor);
     }
 }
